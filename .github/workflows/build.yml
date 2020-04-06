@@ -1,6 +1,8 @@
 name: build
 
 on:
+  repository_dispatch:
+    types: [regen-web]
   push:
     branches: [ staging ]
   schedule:
