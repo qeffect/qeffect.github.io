@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>QAnon</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="/dist/styles.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<header class="mb-4">
+  <div class="bg-light navbar navbar-expand">
+    <div class="container">
+      <a href="/" class="navbar-brand d-flex">
+        <strong>QAnon</strong>
+      </a>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="/channels">channels</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/">videos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/topics">topics</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+    
+<div class="secondary-menu navbar navbar-expand">
+    <div class="container">
+      <span class="navbar-text">
+        Truth and Art TV
+      </span>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="/channel/UCAHCehFYe02Ihviho8D_ZcQ">videos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/topics/UCAHCehFYe02Ihviho8D_ZcQ">topics</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</header>
+<main>
+  
+
+<div class="container">
+    <div class="video">
+        <h1 class="video-title">Q Anon: &quot;Think Server Access [granted] Money talks&quot;</h1>
+        <p class="video-from-channel">
+            from <a href="/channel/UCAHCehFYe02Ihviho8D_ZcQ">Truth and Art TV</a>
+        </p>
+        <p class="video-submitted">
+            uploaded on Aug 30, 2018
+        </p>
+        <div class="embed-responsive embed-responsive-16by9">
+            <div id="player"></div>
+        </div>
+    </div>
+        <div class="video-topics">
+            <h2 class="video-topics-title">Topics</h2>
+                <div class="topic">
+                    <h3>huber</h3>
+                    <div class="video-segments">
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(752); return false;">@00:12:32</a> interviewed by <b>Huber</b> or Mueller Bruce or
+
+                            </div>
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(775); return false;">@00:12:55</a> effective a US attorney John <b>Huber</b> can
+
+                            </div>
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(837); return false;">@00:13:57</a> what exactly is Miller and <b>Huber</b> doing
+
+                            </div>
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(908); return false;">@00:15:08</a> to call John <b>Huber</b> you know to let him
+
+                            </div>
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(921); return false;">@00:15:21</a> does not know if <b>Huber</b> has already
+
+                            </div>
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(943); return false;">@00:15:43</a> that John <b>Huber</b> and maybe even Robert
+
+                            </div>
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(950); return false;">@00:15:50</a> so I know he's definitely saying <b>Huber</b>
+
+                            </div>
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(971); return false;">@00:16:11</a> or with John <b>Huber</b> so we'll see where
+
+                            </div>
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(1134); return false;">@00:18:54</a> people and then <b>huber</b> he's already met
+
+                            </div>
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(1136); return false;">@00:18:56</a> with <b>huber</b> and the inspector general
+
+                            </div>
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(1149); return false;">@00:19:09</a> that Bruce Aras never met with <b>Huber</b> and
+
+                            </div>
+                    </div>
+                </div>
+        </div>
+</div>
+
+
+</main>
+  <footer class="bg-light py-3 mt-5 text-muted text-center">
+    <i class="fab fa-twitter"></i> <a href="https://twitter.com/prag_com">@prag_com</a>
+
+  </footer>
+<script src="/dist/scripts.js"></script>
+
+    <script type="text/javascript">
+        var player = YouTubeArchiverServer.youTubePlayer("player");
+        var seekToInitialDone = false;
+        player.on("stateChange", function(e) {
+            if(e.data === 1 && !seekToInitialDone) {
+                seekToInitialDone = true;
+                var seekTo = parseInt(new URLSearchParams(window.location.search).get("t"));
+                if(seekTo) {
+                    player.seekTo(seekTo, true);
+                }
+            }
+        });
+        player.loadVideoById("oJ1F0mHx3U4");
+        player.playVideo();
+        
+        window.seekTo = function(location) {
+            player.seekTo(location, true);
+        }
+    </script>
+
+</body>
+</html>

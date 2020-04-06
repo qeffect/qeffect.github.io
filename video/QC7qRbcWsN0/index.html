@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>QAnon</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="/dist/styles.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<header class="mb-4">
+  <div class="bg-light navbar navbar-expand">
+    <div class="container">
+      <a href="/" class="navbar-brand d-flex">
+        <strong>QAnon</strong>
+      </a>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="/channels">channels</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/">videos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/topics">topics</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+    
+<div class="secondary-menu navbar navbar-expand">
+    <div class="container">
+      <span class="navbar-text">
+        Destroying the Illusion
+      </span>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="/channel/UCMVTRzCXvIbdK0Y1ZxD-BlA">videos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/topics/UCMVTRzCXvIbdK0Y1ZxD-BlA">topics</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</header>
+<main>
+  
+
+<div class="container">
+    <div class="video">
+        <h1 class="video-title">[2.21] Q Brief -  Latest Q Attacks (WaPo!), Ann Coulter, Red Castle, Mueller End</h1>
+        <p class="video-from-channel">
+            from <a href="/channel/UCMVTRzCXvIbdK0Y1ZxD-BlA">Destroying the Illusion</a>
+        </p>
+        <p class="video-submitted">
+            uploaded on Feb 21, 2019
+        </p>
+        <div class="embed-responsive embed-responsive-16by9">
+            <div id="player"></div>
+        </div>
+    </div>
+        <div class="video-topics">
+            <h2 class="video-topics-title">Topics</h2>
+                <div class="topic">
+                    <h3>proof</h3>
+                    <div class="video-segments">
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(364); return false;">@00:06:04</a> <b>proof</b> one of hundreds one of thousands
+
+                            </div>
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(369); return false;">@00:06:09</a> and an on posting that <b>proof</b> from almost
+
+                            </div>
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(371); return false;">@00:06:11</a> a year ago now the red castle <b>proof</b>
+
+                            </div>
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(393); return false;">@00:06:33</a> castle we get that <b>proof</b> almost a year
+
+                            </div>
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(747); return false;">@00:12:27</a> is aq <b>proof</b> skiff DC - cap Capitol Hill
+
+                            </div>
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(754); return false;">@00:12:34</a> that Q <b>proof</b> so a little over a year ago
+
+                            </div>
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(809); return false;">@00:13:29</a> Julianne tweet here this is the Q <b>proof</b>
+
+                            </div>
+                    </div>
+                </div>
+        </div>
+</div>
+
+
+</main>
+  <footer class="bg-light py-3 mt-5 text-muted text-center">
+    <i class="fab fa-twitter"></i> <a href="https://twitter.com/prag_com">@prag_com</a>
+
+  </footer>
+<script src="/dist/scripts.js"></script>
+
+    <script type="text/javascript">
+        var player = YouTubeArchiverServer.youTubePlayer("player");
+        var seekToInitialDone = false;
+        player.on("stateChange", function(e) {
+            if(e.data === 1 && !seekToInitialDone) {
+                seekToInitialDone = true;
+                var seekTo = parseInt(new URLSearchParams(window.location.search).get("t"));
+                if(seekTo) {
+                    player.seekTo(seekTo, true);
+                }
+            }
+        });
+        player.loadVideoById("QC7qRbcWsN0");
+        player.playVideo();
+        
+        window.seekTo = function(location) {
+            player.seekTo(location, true);
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>QAnon</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="/dist/styles.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<header class="mb-4">
+  <div class="bg-light navbar navbar-expand">
+    <div class="container">
+      <a href="/" class="navbar-brand d-flex">
+        <strong>QAnon</strong>
+      </a>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="/channels">channels</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/">videos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/topics">topics</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+    
+<div class="secondary-menu navbar navbar-expand">
+    <div class="container">
+      <span class="navbar-text">
+        Truth and Art TV
+      </span>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="/channel/UCAHCehFYe02Ihviho8D_ZcQ">videos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/topics/UCAHCehFYe02Ihviho8D_ZcQ">topics</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</header>
+<main>
+  
+
+<div class="container">
+    <div class="video">
+        <h1 class="video-title">Q On Sessions, Gowdy, Goodlatte Resignations- &quot;Logical Thinking Required&quot;</h1>
+        <p class="video-from-channel">
+            from <a href="/channel/UCAHCehFYe02Ihviho8D_ZcQ">Truth and Art TV</a>
+        </p>
+        <p class="video-submitted">
+            uploaded on Nov 10, 2018
+        </p>
+        <div class="embed-responsive embed-responsive-16by9">
+            <div id="player"></div>
+        </div>
+    </div>
+        <div class="video-topics">
+            <h2 class="video-topics-title">Topics</h2>
+                <div class="topic">
+                    <h3>huber</h3>
+                    <div class="video-segments">
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(1094); return false;">@00:18:14</a> that would be John <b>Huber</b> and you know
+
+                            </div>
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(1097); return false;">@00:18:17</a> there's an article there who is <b>Huber</b>
+
+                            </div>
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(1099); return false;">@00:18:19</a> who reconfirmed <b>Huber</b> who originally
+
+                            </div>
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(1104); return false;">@00:18:24</a> appointed <b>Huber</b> that would be Obama
+
+                            </div>
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(1112); return false;">@00:18:32</a> <b>Huber</b> moving forward Q says mandate
+
+                            </div>
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(1114); return false;">@00:18:34</a> charged to <b>Huber</b> resources provided to
+
+                            </div>
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(1119); return false;">@00:18:39</a> <b>Huber</b> who is Horowitz Michael Horowitz
+
+                            </div>
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(1130); return false;">@00:18:50</a> Horowitz and <b>Huber</b> have been given what
+
+                            </div>
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(1143); return false;">@00:19:03</a> <b>Huber</b> there's a team effort going on a
+
+                            </div>
+                    </div>
+                </div>
+        </div>
+</div>
+
+
+</main>
+  <footer class="bg-light py-3 mt-5 text-muted text-center">
+    <i class="fab fa-twitter"></i> <a href="https://twitter.com/prag_com">@prag_com</a>
+
+  </footer>
+<script src="/dist/scripts.js"></script>
+
+    <script type="text/javascript">
+        var player = YouTubeArchiverServer.youTubePlayer("player");
+        var seekToInitialDone = false;
+        player.on("stateChange", function(e) {
+            if(e.data === 1 && !seekToInitialDone) {
+                seekToInitialDone = true;
+                var seekTo = parseInt(new URLSearchParams(window.location.search).get("t"));
+                if(seekTo) {
+                    player.seekTo(seekTo, true);
+                }
+            }
+        });
+        player.loadVideoById("woXHPfgyZG4");
+        player.playVideo();
+        
+        window.seekTo = function(location) {
+            player.seekTo(location, true);
+        }
+    </script>
+
+</body>
+</html>

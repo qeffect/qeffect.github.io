@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>QAnon</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="/dist/styles.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<header class="mb-4">
+  <div class="bg-light navbar navbar-expand">
+    <div class="container">
+      <a href="/" class="navbar-brand d-flex">
+        <strong>QAnon</strong>
+      </a>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="/channels">channels</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/">videos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/topics">topics</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+    
+<div class="secondary-menu navbar navbar-expand">
+    <div class="container">
+      <span class="navbar-text">
+        Tracy Beanz
+      </span>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="/channel/UC98Zwfvjq12M1oi99Yqd78w">videos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/topics/UC98Zwfvjq12M1oi99Yqd78w">topics</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</header>
+<main>
+  
+
+<div class="container">
+    <div class="video">
+        <h1 class="video-title">What is going on? Questions that need answers- A summary</h1>
+        <p class="video-from-channel">
+            from <a href="/channel/UC98Zwfvjq12M1oi99Yqd78w">Tracy Beanz</a>
+        </p>
+        <p class="video-submitted">
+            uploaded on Apr 07, 2017
+        </p>
+        <div class="embed-responsive embed-responsive-16by9">
+            <div id="player"></div>
+        </div>
+    </div>
+        <div class="video-topics">
+            <h2 class="video-topics-title">Topics</h2>
+                <div class="topic">
+                    <h3>false flag</h3>
+                    <div class="video-segments">
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(69); return false;">@00:01:09</a> <b>false</b> <b>flag</b> there are actually people who
+
+                            </div>
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(96); return false;">@00:01:36</a> anyway um <b>false</b> like blatant floss <b>flag</b>
+
+                            </div>
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(105); return false;">@00:01:45</a> everybody knows it's a <b>false</b> black Ron
+
+                            </div>
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(107); return false;">@00:01:47</a> Paul says it's a <b>false</b> <b>flag</b> Rand Paul
+
+                            </div>
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(109); return false;">@00:01:49</a> says as a <b>false</b> <b>flag</b> everybody says it's
+
+                            </div>
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(111); return false;">@00:01:51</a> a <b>false</b> <b>flag</b> Alex Jones says it's a
+
+                            </div>
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(112); return false;">@00:01:52</a> <b>false</b> <b>flag</b> you know anyone who's anyone
+
+                            </div>
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(114); return false;">@00:01:54</a> with the brain says it's a <b>false</b> <b>flag</b>
+
+                            </div>
+                    </div>
+                </div>
+        </div>
+</div>
+
+
+</main>
+  <footer class="bg-light py-3 mt-5 text-muted text-center">
+    <i class="fab fa-twitter"></i> <a href="https://twitter.com/prag_com">@prag_com</a>
+
+  </footer>
+<script src="/dist/scripts.js"></script>
+
+    <script type="text/javascript">
+        var player = YouTubeArchiverServer.youTubePlayer("player");
+        var seekToInitialDone = false;
+        player.on("stateChange", function(e) {
+            if(e.data === 1 && !seekToInitialDone) {
+                seekToInitialDone = true;
+                var seekTo = parseInt(new URLSearchParams(window.location.search).get("t"));
+                if(seekTo) {
+                    player.seekTo(seekTo, true);
+                }
+            }
+        });
+        player.loadVideoById("RGv6qwJ1_a4");
+        player.playVideo();
+        
+        window.seekTo = function(location) {
+            player.seekTo(location, true);
+        }
+    </script>
+
+</body>
+</html>

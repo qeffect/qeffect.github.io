@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>QAnon</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="/dist/styles.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<header class="mb-4">
+  <div class="bg-light navbar navbar-expand">
+    <div class="container">
+      <a href="/" class="navbar-brand d-flex">
+        <strong>QAnon</strong>
+      </a>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="/channels">channels</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/">videos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/topics">topics</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+    
+<div class="secondary-menu navbar navbar-expand">
+    <div class="container">
+      <span class="navbar-text">
+        Tracy Beanz
+      </span>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="/channel/UC98Zwfvjq12M1oi99Yqd78w">videos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/topics/UC98Zwfvjq12M1oi99Yqd78w">topics</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</header>
+<main>
+  
+
+<div class="container">
+    <div class="video">
+        <h1 class="video-title">Have You Seen my Stapler, Strzok??</h1>
+        <p class="video-from-channel">
+            from <a href="/channel/UC98Zwfvjq12M1oi99Yqd78w">Tracy Beanz</a>
+        </p>
+        <p class="video-submitted">
+            uploaded on Dec 03, 2017
+        </p>
+        <div class="embed-responsive embed-responsive-16by9">
+            <div id="player"></div>
+        </div>
+    </div>
+        <div class="video-topics">
+            <h2 class="video-topics-title">Topics</h2>
+                <div class="topic">
+                    <h3>flynn</h3>
+                    <div class="video-segments">
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(1595); return false;">@00:26:35</a> leak yesterday a day after <b>Flynn</b> signs
+
+                            </div>
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(1654); return false;">@00:27:34</a> <b>Flynn</b>
+
+                            </div>
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(1655); return false;">@00:27:35</a> in other words <b>Flynn</b> is now gonna
+
+                            </div>
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(2025); return false;">@00:33:45</a> Mueller why is that right after <b>Flynn</b>
+
+                            </div>
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(2302); return false;">@00:38:22</a> <b>Flynn</b> is testifying in other words we
+
+                            </div>
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(2305); return false;">@00:38:25</a> are right about <b>Flynn</b> Mueller is doing
+
+                            </div>
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(2308); return false;">@00:38:28</a> with <b>Flynn</b> and throw something out there
+
+                            </div>
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(2353); return false;">@00:39:13</a> about any of this stuff yet but <b>Flynn</b>
+
+                            </div>
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(2368); return false;">@00:39:28</a> we think about the <b>Flynn</b> deal is true if
+
+                            </div>
+                    </div>
+                </div>
+        </div>
+</div>
+
+
+</main>
+  <footer class="bg-light py-3 mt-5 text-muted text-center">
+    <i class="fab fa-twitter"></i> <a href="https://twitter.com/prag_com">@prag_com</a>
+
+  </footer>
+<script src="/dist/scripts.js"></script>
+
+    <script type="text/javascript">
+        var player = YouTubeArchiverServer.youTubePlayer("player");
+        var seekToInitialDone = false;
+        player.on("stateChange", function(e) {
+            if(e.data === 1 && !seekToInitialDone) {
+                seekToInitialDone = true;
+                var seekTo = parseInt(new URLSearchParams(window.location.search).get("t"));
+                if(seekTo) {
+                    player.seekTo(seekTo, true);
+                }
+            }
+        });
+        player.loadVideoById("7kzwBZVdW4Y");
+        player.playVideo();
+        
+        window.seekTo = function(location) {
+            player.seekTo(location, true);
+        }
+    </script>
+
+</body>
+</html>
