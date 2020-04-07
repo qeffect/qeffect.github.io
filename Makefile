@@ -13,6 +13,7 @@ checkout-web:
 
 generate:
 	youtube-archiver-server generate --config-path "output/youtube-index/serve.yml" --output "output/web-tmp"
+	touch output/web-tmp/.nojekyll
 	rm -rf output/web/*
 	cp -r output/web-tmp/* output/web
 	rm -rf output/web-tmp
