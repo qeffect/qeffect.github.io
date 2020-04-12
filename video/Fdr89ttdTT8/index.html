@@ -50,6 +50,7 @@
 <main>
   
 
+
 <div class="container">
     <div class="video">
         <h1 class="video-title">US And The Coalition Forces Are Waiting For The Green Light To Carry Out Plan &quot;B&quot; - Episode 951b</h1>
@@ -60,7 +61,7 @@
             uploaded on Apr 22, 2016
         </p>
         <div class="embed-responsive embed-responsive-16by9">
-            <div id="player"></div>
+                <div id="player"></div>
         </div>
     </div>
         <div class="video-topics">
@@ -162,25 +163,25 @@
   </footer>
 <script src="/dist/scripts.js"></script>
 
-    <script type="text/javascript">
-        var player = YouTubeArchiverServer.youTubePlayer("player");
-        var seekToInitialDone = false;
-        player.on("stateChange", function(e) {
-            if(e.data === 1 && !seekToInitialDone) {
-                seekToInitialDone = true;
-                var seekTo = parseInt(new URLSearchParams(window.location.search).get("t"));
-                if(seekTo) {
-                    player.seekTo(seekTo, true);
+        <script type="text/javascript">
+            var player = YouTubeArchiverServer.youTubePlayer("player");
+            var seekToInitialDone = false;
+            player.on("stateChange", function(e) {
+                if(e.data === 1 && !seekToInitialDone) {
+                    seekToInitialDone = true;
+                    var seekTo = parseInt(new URLSearchParams(window.location.search).get("t"));
+                    if(seekTo) {
+                        player.seekTo(seekTo, true);
+                    }
                 }
+            });
+            player.loadVideoById("Fdr89ttdTT8");
+            player.playVideo();
+            
+            window.seekTo = function(location) {
+                player.seekTo(location, true);
             }
-        });
-        player.loadVideoById("Fdr89ttdTT8");
-        player.playVideo();
-        
-        window.seekTo = function(location) {
-            player.seekTo(location, true);
-        }
-    </script>
+        </script>
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112478642-4"></script>
   <script>

@@ -50,6 +50,7 @@
 <main>
   
 
+
 <div class="container">
     <div class="video">
         <h1 class="video-title">Why the Cohen Plea Deal is a Big Nothingburger (NOT EVEN A CRIME! a Civil Fine, Obama did it too)</h1>
@@ -60,7 +61,7 @@
             uploaded on Aug 22, 2018
         </p>
         <div class="embed-responsive embed-responsive-16by9">
-            <div id="player"></div>
+                <div id="player"></div>
         </div>
     </div>
         <div class="video-topics">
@@ -89,25 +90,25 @@
   </footer>
 <script src="/dist/scripts.js"></script>
 
-    <script type="text/javascript">
-        var player = YouTubeArchiverServer.youTubePlayer("player");
-        var seekToInitialDone = false;
-        player.on("stateChange", function(e) {
-            if(e.data === 1 && !seekToInitialDone) {
-                seekToInitialDone = true;
-                var seekTo = parseInt(new URLSearchParams(window.location.search).get("t"));
-                if(seekTo) {
-                    player.seekTo(seekTo, true);
+        <script type="text/javascript">
+            var player = YouTubeArchiverServer.youTubePlayer("player");
+            var seekToInitialDone = false;
+            player.on("stateChange", function(e) {
+                if(e.data === 1 && !seekToInitialDone) {
+                    seekToInitialDone = true;
+                    var seekTo = parseInt(new URLSearchParams(window.location.search).get("t"));
+                    if(seekTo) {
+                        player.seekTo(seekTo, true);
+                    }
                 }
+            });
+            player.loadVideoById("IJOVcRgsHzk");
+            player.playVideo();
+            
+            window.seekTo = function(location) {
+                player.seekTo(location, true);
             }
-        });
-        player.loadVideoById("IJOVcRgsHzk");
-        player.playVideo();
-        
-        window.seekTo = function(location) {
-            player.seekTo(location, true);
-        }
-    </script>
+        </script>
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112478642-4"></script>
   <script>

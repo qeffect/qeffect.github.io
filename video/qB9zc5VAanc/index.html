@@ -50,6 +50,7 @@
 <main>
   
 
+
 <div class="container">
     <div class="video">
         <h1 class="video-title">6.6 - London False Flag Obvious, FBI Arrests NSA Contractor, &amp; Did FBI Raid Huma Abedin&#x27;s House?</h1>
@@ -60,7 +61,7 @@
             uploaded on Jun 06, 2017
         </p>
         <div class="embed-responsive embed-responsive-16by9">
-            <div id="player"></div>
+                <div id="player"></div>
         </div>
     </div>
         <div class="video-topics">
@@ -163,25 +164,25 @@
   </footer>
 <script src="/dist/scripts.js"></script>
 
-    <script type="text/javascript">
-        var player = YouTubeArchiverServer.youTubePlayer("player");
-        var seekToInitialDone = false;
-        player.on("stateChange", function(e) {
-            if(e.data === 1 && !seekToInitialDone) {
-                seekToInitialDone = true;
-                var seekTo = parseInt(new URLSearchParams(window.location.search).get("t"));
-                if(seekTo) {
-                    player.seekTo(seekTo, true);
+        <script type="text/javascript">
+            var player = YouTubeArchiverServer.youTubePlayer("player");
+            var seekToInitialDone = false;
+            player.on("stateChange", function(e) {
+                if(e.data === 1 && !seekToInitialDone) {
+                    seekToInitialDone = true;
+                    var seekTo = parseInt(new URLSearchParams(window.location.search).get("t"));
+                    if(seekTo) {
+                        player.seekTo(seekTo, true);
+                    }
                 }
+            });
+            player.loadVideoById("qB9zc5VAanc");
+            player.playVideo();
+            
+            window.seekTo = function(location) {
+                player.seekTo(location, true);
             }
-        });
-        player.loadVideoById("qB9zc5VAanc");
-        player.playVideo();
-        
-        window.seekTo = function(location) {
-            player.seekTo(location, true);
-        }
-    </script>
+        </script>
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112478642-4"></script>
   <script>
