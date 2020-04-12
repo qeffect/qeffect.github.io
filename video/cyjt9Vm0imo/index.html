@@ -61,7 +61,7 @@
             uploaded on Apr 25, 2018
         </p>
         <div class="embed-responsive embed-responsive-16by9">
-                <div id="player"></div>
+                <video id="player" src="https://github.com/qeffect/youtube-index-mirror/releases/download/videos/cyjt9Vm0imo.mp4" controls autoplay></video>
         </div>
     </div>
         <div class="video-topics">
@@ -96,6 +96,15 @@
                     <div class="video-segments">
                             <div class="video-segment">
                                 <a href="javascript::void(0);" onclick="seekTo(1097); return false;">@00:18:17</a> <b>mkultra</b> programming and let loose or
+
+                            </div>
+                    </div>
+                </div>
+                <div class="topic">
+                    <h3>Soros</h3>
+                    <div class="video-segments">
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(141); return false;">@00:02:21</a> lines say how does george <b>soros</b> fund
 
                             </div>
                     </div>
@@ -281,22 +290,8 @@
 <script src="/dist/scripts.js"></script>
 
         <script type="text/javascript">
-            var player = YouTubeArchiverServer.youTubePlayer("player");
-            var seekToInitialDone = false;
-            player.on("stateChange", function(e) {
-                if(e.data === 1 && !seekToInitialDone) {
-                    seekToInitialDone = true;
-                    var seekTo = parseInt(new URLSearchParams(window.location.search).get("t"));
-                    if(seekTo) {
-                        player.seekTo(seekTo, true);
-                    }
-                }
-            });
-            player.loadVideoById("cyjt9Vm0imo");
-            player.playVideo();
-            
             window.seekTo = function(location) {
-                player.seekTo(location, true);
+                player.currentTime = location;
             }
         </script>
 

@@ -61,7 +61,7 @@
             uploaded on Dec 23, 2019
         </p>
         <div class="embed-responsive embed-responsive-16by9">
-                <div id="player"></div>
+                <video id="player" src="https://github.com/qeffect/youtube-index-mirror/releases/download/videos/t6dwa21eo_M.mp4" controls autoplay></video>
         </div>
     </div>
         <div class="video-topics">
@@ -108,6 +108,31 @@
                     <div class="video-segments">
                             <div class="video-segment">
                                 <a href="javascript::void(0);" onclick="seekTo(704); return false;">@00:11:44</a> to be a ufo over <b>las</b> <b>vegas</b> and we'll
+
+                            </div>
+                    </div>
+                </div>
+                <div class="topic">
+                    <h3>Soros</h3>
+                    <div class="video-segments">
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(893); return false;">@00:14:53</a> actually mentioned george <b>soros</b> his name
+
+                            </div>
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(936); return false;">@00:15:36</a> out and out saying <b>soros</b> his name right
+
+                            </div>
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(940); return false;">@00:15:40</a> speculate that <b>soros</b> might be one of the
+
+                            </div>
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(954); return false;">@00:15:54</a> be <b>soros</b> i don't know i have no idea
+
+                            </div>
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(973); return false;">@00:16:13</a> <b>soros</b> getting out into the public a
 
                             </div>
                     </div>
@@ -221,22 +246,8 @@
 <script src="/dist/scripts.js"></script>
 
         <script type="text/javascript">
-            var player = YouTubeArchiverServer.youTubePlayer("player");
-            var seekToInitialDone = false;
-            player.on("stateChange", function(e) {
-                if(e.data === 1 && !seekToInitialDone) {
-                    seekToInitialDone = true;
-                    var seekTo = parseInt(new URLSearchParams(window.location.search).get("t"));
-                    if(seekTo) {
-                        player.seekTo(seekTo, true);
-                    }
-                }
-            });
-            player.loadVideoById("t6dwa21eo_M");
-            player.playVideo();
-            
             window.seekTo = function(location) {
-                player.seekTo(location, true);
+                player.currentTime = location;
             }
         </script>
 

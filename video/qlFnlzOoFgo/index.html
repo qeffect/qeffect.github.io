@@ -61,7 +61,7 @@
             uploaded on Nov 20, 2017
         </p>
         <div class="embed-responsive embed-responsive-16by9">
-                <div id="player"></div>
+                <video id="player" src="https://github.com/qeffect/youtube-index-mirror/releases/download/videos/qlFnlzOoFgo.mp4" controls autoplay></video>
         </div>
     </div>
         <div class="video-topics">
@@ -92,6 +92,39 @@
                             </div>
                             <div class="video-segment">
                                 <a href="javascript::void(0);" onclick="seekTo(627); return false;">@00:10:27</a> mockingbird <b>mkultra</b> the montauk project
+
+                            </div>
+                    </div>
+                </div>
+                <div class="topic">
+                    <h3>Soros</h3>
+                    <div class="video-segments">
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(1688); return false;">@00:28:08</a> house george <b>soros</b> all of these evil
+
+                            </div>
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(1714); return false;">@00:28:34</a> matter of time before <b>soros</b> is then
+
+                            </div>
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(1756); return false;">@00:29:16</a> <b>soros</b> and this broke just today it's
+
+                            </div>
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(1762); return false;">@00:29:22</a> but it says <b>soros</b> tied donor network to
+
+                            </div>
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(1782); return false;">@00:29:42</a> very progressive we could say <b>soros</b>
+
+                            </div>
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(1818); return false;">@00:30:18</a> nation so it looks like <b>soros</b> is taking
+
+                            </div>
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(1864); return false;">@00:31:04</a> george <b>soros</b> is investing all of his
 
                             </div>
                     </div>
@@ -313,22 +346,8 @@
 <script src="/dist/scripts.js"></script>
 
         <script type="text/javascript">
-            var player = YouTubeArchiverServer.youTubePlayer("player");
-            var seekToInitialDone = false;
-            player.on("stateChange", function(e) {
-                if(e.data === 1 && !seekToInitialDone) {
-                    seekToInitialDone = true;
-                    var seekTo = parseInt(new URLSearchParams(window.location.search).get("t"));
-                    if(seekTo) {
-                        player.seekTo(seekTo, true);
-                    }
-                }
-            });
-            player.loadVideoById("qlFnlzOoFgo");
-            player.playVideo();
-            
             window.seekTo = function(location) {
-                player.seekTo(location, true);
+                player.currentTime = location;
             }
         </script>
 
