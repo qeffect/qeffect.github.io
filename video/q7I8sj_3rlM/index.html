@@ -61,7 +61,7 @@
             uploaded on Feb 06, 2018
         </p>
         <div class="embed-responsive embed-responsive-16by9">
-                <div id="player"></div>
+                <video id="player" src="https://github.com/qeffect/youtube-index-mirror/releases/download/videos/q7I8sj_3rlM.mp4" controls autoplay></video>
         </div>
     </div>
         <div class="video-topics">
@@ -227,22 +227,8 @@
 <script src="/dist/scripts.js"></script>
 
         <script type="text/javascript">
-            var player = YouTubeArchiverServer.youTubePlayer("player");
-            var seekToInitialDone = false;
-            player.on("stateChange", function(e) {
-                if(e.data === 1 && !seekToInitialDone) {
-                    seekToInitialDone = true;
-                    var seekTo = parseInt(new URLSearchParams(window.location.search).get("t"));
-                    if(seekTo) {
-                        player.seekTo(seekTo, true);
-                    }
-                }
-            });
-            player.loadVideoById("q7I8sj_3rlM");
-            player.playVideo();
-            
             window.seekTo = function(location) {
-                player.seekTo(location, true);
+                player.currentTime = location;
             }
         </script>
 
