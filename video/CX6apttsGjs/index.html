@@ -61,7 +61,7 @@
             uploaded on Mar 20, 2018
         </p>
         <div class="embed-responsive embed-responsive-16by9">
-                <div id="player"></div>
+                <video id="player" src="https://github.com/qeffect/youtube-index-mirror/releases/download/videos/CX6apttsGjs.mp4" controls autoplay></video>
         </div>
     </div>
 </div>
@@ -75,23 +75,15 @@
 <script src="/dist/scripts.js"></script>
 
         <script type="text/javascript">
-            var player = YouTubeArchiverServer.youTubePlayer("player");
-            var seekToInitialDone = false;
-            player.on("stateChange", function(e) {
-                if(e.data === 1 && !seekToInitialDone) {
-                    seekToInitialDone = true;
-                    var seekTo = parseInt(new URLSearchParams(window.location.search).get("t"));
-                    if(seekTo) {
-                        player.seekTo(seekTo, true);
-                    }
-                }
-            });
-            player.loadVideoById("CX6apttsGjs");
-            player.playVideo();
-            
             window.seekTo = function(location) {
-                player.seekTo(location, true);
+                player.currentTime = location;
             }
+            document.getElementById('player').addEventListener('loadedmetadata', function() {
+                var seekTo = parseInt(new URLSearchParams(window.location.search).get("t"));
+                if(seekTo) {
+                    player.currentTime = seekTo;
+                }
+            }, false);
         </script>
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112478642-4"></script>

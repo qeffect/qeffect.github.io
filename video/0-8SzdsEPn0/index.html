@@ -123,6 +123,12 @@
             window.seekTo = function(location) {
                 player.currentTime = location;
             }
+            document.getElementById('player').addEventListener('loadedmetadata', function() {
+                var seekTo = parseInt(new URLSearchParams(window.location.search).get("t"));
+                if(seekTo) {
+                    player.currentTime = seekTo;
+                }
+            }, false);
         </script>
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112478642-4"></script>
