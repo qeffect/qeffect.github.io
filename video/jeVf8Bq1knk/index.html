@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>QAnon</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="/dist/styles.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<header class="mb-4">
+  <div class="bg-light navbar navbar-expand">
+    <div class="container">
+      <a href="/" class="navbar-brand d-flex">
+        <strong>QAnon</strong>
+      </a>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="/channels">channels</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/">videos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/topics">topics</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+    
+<div class="secondary-menu navbar navbar-expand">
+    <div class="container">
+      <span class="navbar-text">
+        Amazing Polly
+      </span>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="/channel/UCJkOZZrGNEJYDhzVwd24Bfg">videos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/channel/UCJkOZZrGNEJYDhzVwd24Bfg/topics">topics</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</header>
+<main>
+  
+
+
+<div class="container">
+    <div class="video">
+        <h1 class="video-title">Your Body is Their Weapon - We&#x27;re all Patients Now</h1>
+        
+        <p class="video-from-channel">
+            from <a href="/channel/UCJkOZZrGNEJYDhzVwd24Bfg">Amazing Polly</a>
+        </p>
+        <p class="video-submitted">
+            uploaded on Jul 21, 2020
+        </p>
+        <div class="embed-responsive embed-responsive-16by9">
+                <div id="player"></div>
+        </div>
+    </div>
+        <div class="video-topics">
+            <h2 class="video-topics-title">Topics</h2>
+                <div class="topic">
+                    <h3>Bill Gates</h3>
+                    <div class="video-segments">
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(758); return false;">@00:12:38</a> vaccines <b>bill</b> <b>gates</b> who's going to get
+
+                            </div>
+                    </div>
+                </div>
+                <div class="topic">
+                    <h3>COVID-19</h3>
+                    <div class="video-segments">
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(4); return false;">@00:00:04</a> <b>coronavirus</b> response and the lockdowns
+
+                            </div>
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(128); return false;">@00:02:08</a> with the <b>coronavirus</b> response
+
+                            </div>
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(412); return false;">@00:06:52</a> can you see that in the <b>coronavirus</b>
+
+                            </div>
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(627); return false;">@00:10:27</a> and think of the <b>covid</b> response 15 days
+
+                            </div>
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(744); return false;">@00:12:24</a> i argue that these <b>covid</b> people the
+
+                            </div>
+                    </div>
+                </div>
+                <div class="topic">
+                    <h3>Vaccines</h3>
+                    <div class="video-segments">
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(758); return false;">@00:12:38</a> <b>vaccines</b> bill gates who's going to get
+
+                            </div>
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(1002); return false;">@00:16:42</a> and what about the <b>vaccines</b> you have a
+
+                            </div>
+                    </div>
+                </div>
+        </div>
+</div>
+
+
+</main>
+  <footer class="bg-light py-3 mt-5 text-muted text-center">
+    <i class="fab fa-twitter"></i> <a href="https://twitter.com/prag_com">@prag_com</a>
+
+  </footer>
+<script src="/dist/scripts.js"></script>
+
+        <script type="text/javascript">
+            var player = YouTubeArchiverServer.youTubePlayer("player");
+            var seekToInitialDone = false;
+            player.on("stateChange", function(e) {
+                if(e.data === 1 && !seekToInitialDone) {
+                    seekToInitialDone = true;
+                    var seekTo = parseInt(new URLSearchParams(window.location.search).get("t"));
+                    if(seekTo) {
+                        player.seekTo(seekTo, true);
+                    }
+                }
+            });
+            player.loadVideoById("jeVf8Bq1knk");
+            player.playVideo();
+            
+            window.seekTo = function(location) {
+                player.seekTo(location, true);
+            }
+        </script>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112478642-4"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-112478642-4');
+</script>
+</body>
+</html>
