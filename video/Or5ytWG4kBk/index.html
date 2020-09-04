@@ -1,0 +1,171 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>QAnon</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="/dist/styles.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<header class="mb-4">
+  <div class="bg-light navbar navbar-expand">
+    <div class="container">
+      <a href="/" class="navbar-brand d-flex">
+        <strong>QAnon</strong>
+      </a>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="/channels">channels</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/">videos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/topics">topics</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+    
+<div class="secondary-menu navbar navbar-expand">
+    <div class="container">
+      <span class="navbar-text">
+        JustInformed Talk
+      </span>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="/channel/UCm5CkXzGXb-A2XX0nuTctMQ">videos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/channel/UCm5CkXzGXb-A2XX0nuTctMQ/topics">topics</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</header>
+<main>
+  
+
+
+<div class="container">
+    <div class="video">
+        <h1 class="video-title">Adamcast IRL Meets JustInformed Talk...THE INTERVIEW!</h1>
+        
+        <p class="video-from-channel">
+            from <a href="/channel/UCm5CkXzGXb-A2XX0nuTctMQ">JustInformed Talk</a>
+        </p>
+        <p class="video-submitted">
+            uploaded on Sep 03, 2020
+        </p>
+        <div class="embed-responsive embed-responsive-16by9">
+                <div id="player"></div>
+        </div>
+    </div>
+        <div class="video-topics">
+            <h2 class="video-topics-title">Topics</h2>
+                <div class="topic">
+                    <h3>Epstein</h3>
+                    <div class="video-segments">
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(2237); return false;">@00:37:17</a> hey did you see like <b>epstein</b> island
+
+                            </div>
+                    </div>
+                </div>
+                <div class="topic">
+                    <h3>COVID-19</h3>
+                    <div class="video-segments">
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(478); return false;">@00:07:58</a> but when <b>covid</b> hit and the riots were
+
+                            </div>
+                    </div>
+                </div>
+                <div class="topic">
+                    <h3>Twitter</h3>
+                    <div class="video-segments">
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(86); return false;">@00:01:26</a> <b>twitter</b> with his uh work with tim poole
+
+                            </div>
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(418); return false;">@00:06:58</a> put it on <b>twitter</b> and i think i got like
+
+                            </div>
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(1720); return false;">@00:28:40</a> <b>twitter</b> the other day and it was this
+
+                            </div>
+                    </div>
+                </div>
+                <div class="topic">
+                    <h3>China</h3>
+                    <div class="video-segments">
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(1772); return false;">@00:29:32</a> we look at <b>china</b>
+
+                            </div>
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(1803); return false;">@00:30:03</a> <b>china</b> they actually worship marx as like
+
+                            </div>
+                    </div>
+                </div>
+                <div class="topic">
+                    <h3>Proof</h3>
+                    <div class="video-segments">
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(564); return false;">@00:09:24</a> the actual <b>proof</b>
+
+                            </div>
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(565); return false;">@00:09:25</a> of what's going on and the <b>proof</b>
+
+                            </div>
+                    </div>
+                </div>
+        </div>
+</div>
+
+
+</main>
+  <footer class="bg-light py-3 mt-5 text-muted text-center">
+    <i class="fab fa-twitter"></i> <a href="https://twitter.com/prag_com">@prag_com</a>
+
+  </footer>
+<script src="/dist/scripts.js"></script>
+
+        <script type="text/javascript">
+            var player = YouTubeArchiverServer.youTubePlayer("player");
+            var seekToInitialDone = false;
+            player.on("stateChange", function(e) {
+                if(e.data === 1 && !seekToInitialDone) {
+                    seekToInitialDone = true;
+                    var seekTo = parseInt(new URLSearchParams(window.location.search).get("t"));
+                    if(seekTo) {
+                        player.seekTo(seekTo, true);
+                    }
+                }
+            });
+            player.loadVideoById("Or5ytWG4kBk");
+            player.playVideo();
+            
+            window.seekTo = function(location) {
+                player.seekTo(location, true);
+            }
+        </script>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112478642-4"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-112478642-4');
+</script>
+</body>
+</html>
