@@ -1,0 +1,173 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>QAnon</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="/dist/styles.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<header class="mb-4">
+  <div class="bg-light navbar navbar-expand">
+    <div class="container">
+      <a href="/" class="navbar-brand d-flex">
+        <strong>QAnon</strong>
+      </a>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="/channels">channels</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/">videos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/topics">topics</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+    
+<div class="secondary-menu navbar navbar-expand">
+    <div class="container">
+      <span class="navbar-text">
+        TRUreporting
+      </span>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="/channel/UCpwXjOAwWDuWlmA2gTjjBwg">videos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/channel/UCpwXjOAwWDuWlmA2gTjjBwg/topics">topics</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</header>
+<main>
+  
+
+
+<div class="container">
+    <div class="video">
+        <h1 class="video-title">TRUreporting Rally Coverage:  Sanford Florida 10/12/20</h1>
+        
+        <p class="video-from-channel">
+            from <a href="/channel/UCpwXjOAwWDuWlmA2gTjjBwg">TRUreporting</a>
+        </p>
+        <p class="video-submitted">
+            uploaded on Oct 13, 2020
+        </p>
+        <div class="embed-responsive embed-responsive-16by9">
+                <div id="player"></div>
+        </div>
+    </div>
+        <div class="video-topics">
+            <h2 class="video-topics-title">Topics</h2>
+                <div class="topic">
+                    <h3>China</h3>
+                    <div class="video-segments">
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(867); return false;">@00:14:27</a> president xi of <b>china</b> did us no favor
+
+                            </div>
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(1190); return false;">@00:19:50</a> we've been beating <b>china</b> we've been
+
+                            </div>
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(1194); return false;">@00:19:54</a> we were teaching <b>china</b> like they've
+
+                            </div>
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(1884); return false;">@00:31:24</a> when i locked down <b>china</b> he thought it
+
+                            </div>
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(1888); return false;">@00:31:28</a> when i locked down <b>china</b> which was in
+
+                            </div>
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(1923); return false;">@00:32:03</a> escape they allowed it to escape <b>china</b>
+
+                            </div>
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(2058); return false;">@00:34:18</a> from <b>china</b>
+
+                            </div>
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(2182); return false;">@00:36:22</a> your jobs to <b>china</b> your
+
+                            </div>
+                    </div>
+                </div>
+                <div class="topic">
+                    <h3>Vaccines</h3>
+                    <div class="video-segments">
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(1978); return false;">@00:32:58</a> we're years ahead on <b>vaccines</b> and
+
+                            </div>
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(1989); return false;">@00:33:09</a> we have great <b>vaccines</b> coming
+
+                            </div>
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(1996); return false;">@00:33:16</a> happening with the <b>vaccines</b>
+
+                            </div>
+                    </div>
+                </div>
+                <div class="topic">
+                    <h3>Proof</h3>
+                    <div class="video-segments">
+                            <div class="video-segment">
+                                <a href="javascript::void(0);" onclick="seekTo(123); return false;">@00:02:03</a> 10 ounce solid gold american eagle <b>proof</b>
+
+                            </div>
+                    </div>
+                </div>
+        </div>
+</div>
+
+
+</main>
+  <footer class="bg-light py-3 mt-5 text-muted text-center">
+    <i class="fab fa-twitter"></i> <a href="https://twitter.com/prag_com">@prag_com</a>
+
+  </footer>
+<script src="/dist/scripts.js"></script>
+
+        <script type="text/javascript">
+            var player = YouTubeArchiverServer.youTubePlayer("player");
+            var seekToInitialDone = false;
+            player.on("stateChange", function(e) {
+                if(e.data === 1 && !seekToInitialDone) {
+                    seekToInitialDone = true;
+                    var seekTo = parseInt(new URLSearchParams(window.location.search).get("t"));
+                    if(seekTo) {
+                        player.seekTo(seekTo, true);
+                    }
+                }
+            });
+            player.loadVideoById("EbCjNzgpwUc");
+            player.playVideo();
+            
+            window.seekTo = function(location) {
+                player.seekTo(location, true);
+            }
+        </script>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112478642-4"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-112478642-4');
+</script>
+</body>
+</html>
